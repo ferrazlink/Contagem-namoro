@@ -1,0 +1,69 @@
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#contador {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.campo {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  border-radius: 15px;
+  min-width: 80px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.campo span {
+  font-size: 2.5rem;
+  display: block;
+  text-align: center;
+}
+
+.campo div {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#mensagem-romantica {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+
+.galeria {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.foto {
+  width: 180px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.05);
+}
