@@ -67,3 +67,12 @@ h1 {
 .foto:hover {
   transform: scale(1.05);
 }
+/* Área do visualizador */
+#visualizador {
+  display: none;           /* começa escondida */
+  margin-top: 40px;        /* espaço acima */
+  justify-content: center;  /* centraliza horizontalmente */
+  align-items: center;      /* centraliza verticalmente */
+  gap: 30px;                /* espaço entre foto e frase */
+  flex-wrap: wrap;          /* permite quebrar linha se precisar */
+}

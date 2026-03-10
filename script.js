@@ -35,3 +35,31 @@ function atualizarContador() {
 }
 
 setInterval(atualizarContador, 1000);
+const fotos = document.querySelectorAll(".foto");
+const visualizador = document.getElementById("visualizador");
+const fotoGrande = document.getElementById("foto-grande");
+const frase = document.getElementById("frase-romantica");
+
+const frases = [
+"Você é meu lugar favorito ❤️",
+"Cada momento com você é especial 💕",
+"Meu mundo ficou melhor quando você chegou 💖",
+"Eu escolheria você mil vezes 💘",
+"Te amar é minha coisa favorita ✨"
+];
+
+fotos.forEach(foto => {
+
+  foto.addEventListener("click", () => {
+
+    fotoGrande.src = foto.src;
+
+    const fraseAleatoria = frases[Math.floor(Math.random()*frases.length)];
+
+    frase.textContent = fraseAleatoria;
+
+    visualizador.style.display = "flex";
+
+  });
+
+});
